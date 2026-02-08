@@ -98,6 +98,7 @@
     ul {
       margin-left: 20px;
       margin-top: 8px;
+      margin-bottom: 16px;
     }
 
     li {
@@ -139,49 +140,44 @@
     </header>
 
     <section>
-      <h2>1. Toplanan Bilgiler</h2>
+      <h2>1. Toplanan ve Paylaşılan Bilgiler</h2>
       <p>
-        SLICBYTE tarafından geliştirilen mobil uygulamalar, kullanıcıdan doğrudan
+        SLICBYTE ("biz") tarafından geliştirilen mobil uygulamalar, kullanıcıdan doğrudan
         kişisel bilgi (isim, e-posta adresi, telefon numarası vb.) talep etmez.
       </p>
       <p>
-        Ancak uygulamalarımız, reklam gösterimi amacıyla Google AdMob hizmetini
-        kullanabilir. Bu kapsamda aşağıdaki veriler işlenebilir:
+        Ancak uygulamalarımız, hizmet kalitesini artırmak ve reklam sunabilmek amacıyla 
+        Google AdMob ve Firebase hizmetlerini kullanır. Bu kapsamda aşağıdaki veriler 
+        otomatik olarak toplanabilir ve işlenebilir:
       </p>
       <ul>
-        <li>Cihaz veya diğer kimlikler (ör. reklam kimliği)</li>
-        <li>Yaklaşık konum bilgisi (IP adresinden türetilen ülke/bölge)</li>
+        <li><strong>Cihaz ve Kimlik Bilgileri:</strong> Reklam ve analiz amaçlı Cihaz Kimliği (Device ID) ve Reklam Kimliği.</li>
+        <li><strong>Konum Bilgileri:</strong> Reklamların coğrafi uygunluğu için yaklaşık konum verisi (IP tabanlı).</li>
+        <li><strong>Uygulama Performansı:</strong> Hataları gidermek için Kilitlenme Günlükleri (Crash Logs) ve Teşhis Verileri (Diagnostics).</li>
+        <li><strong>Uygulama Etkinliği:</strong> Uygulama içi etkileşimler ve kullanım istatistikleri.</li>
       </ul>
-      <p>
-Uygulamalarımız, kullanıcı davranışlarını analiz etmek ve uygulama
-performansını iyileştirmek amacıyla Google Firebase Analytics hizmetini
-kullanabilir. Bu kapsamda anonim kullanım verileri (örneğin uygulama
-etkileşimleri, oturum bilgileri ve genel kullanım istatistikleri)
-toplanabilir.
-</p>
     </section>
 
     <section>
-      <h2>2. Kimlik Doğrulama</h2>
+      <h2>2. Verilerin Kullanım Amacı</h2>
       <p>
-        Uygulamalarımız, Firebase Anonymous Authentication kullanabilir.
-        Kullanıcılardan hesap oluşturması veya giriş yapması istenmez.
+        Toplanan veriler yalnızca şu amaçlarla kullanılır:
       </p>
-      <p>
-        Bu kimlik doğrulama yöntemi yalnızca teknik amaçlarla kullanılır ve
-        kullanıcıyı doğrudan tanımlamaz.
-      </p>
+      <ul>
+        <li>Google AdMob aracılığıyla size uygun reklamları göstermek.</li>
+        <li>Uygulama hatalarını tespit edip performansı iyileştirmek.</li>
+        <li>Sahteciliği önlemek (Fraud Prevention) ve güvenliği sağlamak.</li>
+        <li>Anonim kullanıcı analitiği oluşturmak.</li>
+      </ul>
     </section>
 
     <section>
-      <h2>3. Veri Paylaşımı</h2>
+      <h2>3. Kimlik Doğrulama</h2>
       <p>
-        Toplanan veriler yalnızca Google tarafından sağlanan hizmetler
-        (AdMob ve Firebase) kapsamında işlenebilir.
+        Uygulamalarımız, güvenli veri iletişimi için Firebase Anonymous Authentication kullanabilir.
       </p>
       <p>
-        SLICBYTE, kullanıcı verilerini kendi sunucularında saklamaz veya üçüncü
-        taraflara satmaz.
+        Bu yöntem, kullanıcıdan herhangi bir kişisel bilgi talep etmez ve sizi kişisel olarak tanımlamaz.
       </p>
     </section>
 
@@ -190,7 +186,6 @@ toplanabilir.
       <p>
         Veriler, güvenli bağlantılar (HTTPS/TLS) üzerinden aktarılır ve
         endüstri standardı güvenlik önlemleriyle korunur.
-        Gerekli durumlarda kullanıcı onayı (consent) alınır.
       </p>
     </section>
 
